@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.navbar {
+    height: 60px;
+    position: fixed;
+    top: 10px;
+    left: 25%;
+    right: 25%;
+    background: #efecec;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 0 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Verdana', serif;
+    border-radius: 10px;
+}
+
+.logo-details {
+    display: flex;
+    align-items: center;
+}
+
+.logo-details .bx {
+    color: #000000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.logo_name {
+    color: #000000;
+    font-size: 22px;
+    font-weight: thin;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the links horizontally */
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px;
+    transition: all 0.4s ease;
+    font-size: 15px;
+    color: #000;
+}
+
+.nav-links li a:hover {
+    background: #fdefeb;
+    border-radius: 10px;
+}
+
+.nav-links li .bx {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.link_name {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media (max-width: 420px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        font-size: 20px;
+    }
+}
